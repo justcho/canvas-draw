@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {overflow: hidden}
+
+#drawing-board {background: white;position: fixed; display: block;cursor: crosshair;}
+
+.tools {position: fixed;left: 0;bottom: 30px; width: 100%;display: flex;justify-content: center;text-align: center}
+
+.tools button {border-radius: 50%;width: 50px;height: 50px; background-color: rgba(255, 255, 255, 0.7);border: 1px solid #eee;outline: none;cursor: pointer;box-sizing: border-box;margin: 0 10px;text-align: center;color: #ccc;line-height: 50px;box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); transition: 0.3s;}
+
+.tools button.active, .tools button:active {box-shadow: 0 0 15px #8C0783; color: #8C0783;}
+
+.tools button i {font-size: 24px;}
+
+.color-group{position: fixed;top: 50%;right:30px;width: 30px;height: 150px;margin-top: -150px;}
+.color-group ul{list-style: none;}
+.color-group ul li{width: 30px;height: 30px;margin: 10px 0;border-radius: 50%;box-sizing: border-box;border:3px solid white;box-shadow: 0 0 8px rgba(0,0,0,0.2);cursor: pointer;transition: 0.3s;}
+.color-group ul li.active{box-shadow:0 0 15px #8C0783;}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .tools {bottom: auto;top: 20px;}
+
+    .tools button {width: 35px;height: 35px;line-height: 35px;margin-bottom: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);}
+
+    .tools button.active, .tools button:active {box-shadow: 0 0 5px #8C0783;}
+
+    .tools button i {font-size: 18px;}
+
+    .tools #swatches {display: none}
+
+}

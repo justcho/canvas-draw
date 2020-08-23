@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>画板</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2022765_sd4aaiqgi2.css">
+</head>
+<body>
+<canvas id="draw-board" width="100" height="100"></canvas>
+<div class="color-group">
+    <ul>
+        <li id="black" class="color-item active" style="background-color: black;"></li>
+        <li id="red" class="color-item" style="background-color: #FF3333;"></li>
+        <li id="blue" class="color-item" style="background-color: #0066FF;"></li>
+        <li id="yellow" class="color-item" style="background-color: #FFFF33;"></li>
+        <li id="green" class="color-item" style="background-color: #33CC66;"></li>
+    </ul>
+</div>
+<div class="tools">
+    <button id="brush" class="active" title="画笔"><i class="iconfont icon-draw"></i></button>
+    <button id="eraser" title="橡皮擦"><i class="iconfont icon-eraser"></i></button>
+    <button id="clear" title="清空"><i class="iconfont icon-clear"></i></button>
+    <button id="save" title="保存"><i class="iconfont icon-save"></i></button>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
